@@ -1,7 +1,7 @@
 CarCareWebSite
 ==============
 
-A simple web site for a car care garage and shop to present their products, services, and offers.
+A web site for a car care garage and shop to present their products, services, and offers.
 
 **Future features will include:**
 * E-Commerce
