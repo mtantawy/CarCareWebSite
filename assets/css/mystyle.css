@@ -1,0 +1,64 @@
+body {
+  /*margin-top: 10px;
+  margin-bottom: 10px;*/
+  background: none;
+}
+html { 
+background: url('img/bg_2.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.logos {
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  /*background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(238,238,238,.15);
+  border: 1px solid rgba(86,61,124,.2);*/
+}
+.mynav {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(238,238,238,.5);
+  border: 1px solid rgba(86,61,124,.2); 
+}
+.navbar-default .mynavlinks>li>a {
+  color: #111;
+  font-weight: bolder;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  background-color: #c1c1c1;
+}
+.carousel-inner > .item > a > img { 
+  margin: 0 auto; 
+  height:450px;
+}
+.carousel-inner > .item > img { 
+  margin: 0 auto; 
+  height:450px;
+}
+.mybody {
+  margin:10px;
+  background-color: rgba(238,238,238,.8);
+  border: 1px solid rgba(86,61,124,.2); 
+}
+#mybody {
+  padding: 30px;
+}
+#right-sidebar {
+  padding: 10px;
+}
+.mybody>ul>li>a {
+  color: #111;
+  font-weight: bolder;
+}
+.myfooter {
+  background-color: rgba(238,238,238,.5);
+  border: 1px solid rgba(86,61,124,.2); 
+  text-align: center;
+}
+.myfooter>a {
+  color: #444;
+}

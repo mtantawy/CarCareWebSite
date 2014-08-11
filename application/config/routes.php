@@ -41,6 +41,14 @@
 $route['default_controller'] = "site";
 $route['404_override'] = '';
 
+$route['^(About|Offers|Location|Contact)(/:any)?$'] = "site/$0";
+$route['Product/(:num)'] = "products/product/$1";
+$route['Service/(:num)'] = "Services/service/$1";
+$route['Products'] = "products";
+$route['Products(/:any)'] = "products/$0";
+$route['Services'] = "services";
+$route['Services(/:any)'] = "services/$0";
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
