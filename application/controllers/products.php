@@ -4,14 +4,13 @@ class Products extends CI_Controller {
 
 	public function index()
 	{
-		echo 'hhh';
 		$this->brands();
 	}
 
 	public function brands()
 	{
 		$this->load->view('header');
-		//$this->load->view('nav'); //no nav bar in home page
+		$this->load->view('brands');
 		$this->load->view('home');
 		$this->load->view('footer');
 	}
@@ -20,7 +19,7 @@ class Products extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('nav');
-		$this->load->view('about');
+		$this->load->view('brand');
 		$this->load->view('footer');
 	}
 
@@ -28,6 +27,8 @@ class Products extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('nav');
-		$this->load->view('services');
+		$this->load->view('the_product');
 		$this->load->view('footer');
 	}
+
+}

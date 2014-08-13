@@ -10,7 +10,7 @@ class Services extends CI_Controller {
 	public function categories()
 	{
 		$this->load->view('header');
-		//$this->load->view('nav'); //no nav bar in home page
+		$this->load->view('categories');
 		$this->load->view('home');
 		$this->load->view('footer');
 	}
@@ -19,7 +19,7 @@ class Services extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('nav');
-		$this->load->view('about');
+		$this->load->view('category');
 		$this->load->view('footer');
 	}
 
@@ -27,6 +27,8 @@ class Services extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('nav');
-		$this->load->view('services');
+		$this->load->view('the_service');
 		$this->load->view('footer');
 	}
+
+}
