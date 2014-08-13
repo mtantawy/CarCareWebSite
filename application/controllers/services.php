@@ -12,6 +12,7 @@ class Services extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('categories');
 		$this->load->view('home');
+		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
 
@@ -20,6 +21,7 @@ class Services extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('nav');
 		$this->load->view('category');
+		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
 
@@ -28,6 +30,7 @@ class Services extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('nav');
 		$this->load->view('service');
+		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
 

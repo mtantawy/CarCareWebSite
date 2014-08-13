@@ -1,5 +1,5 @@
 		<div class="well well-sm myfooter">
-			<a href="#">Home</a> | <a href="#">About Detailer's</a> | <a href="#">Services</a> | <a href="#">Products</a> | <a href="#">Offers</a> | <a href="#">Location Map</a> | <a href="#">Contact</a>
+			<a href="/">Home</a> | <a href="about">About Detailer's</a> | <a href="services">Services</a> | <a href="products">Products</a> | <a href="offers">Offers</a> | <a href="location">Location Map</a> | <a href="contact">Contact</a>
 		</div>
 
     </div>
