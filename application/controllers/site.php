@@ -62,3 +62,5 @@ class Site extends CI_Controller {
 		$this->load->view('contact');
 		$this->load->view('footer');
 	}
+
+}
