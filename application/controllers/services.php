@@ -27,7 +27,7 @@ class Services extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('nav');
-		$this->load->view('the_service');
+		$this->load->view('service');
 		$this->load->view('footer');
 	}
 

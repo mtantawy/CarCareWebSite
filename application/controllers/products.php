@@ -27,7 +27,7 @@ class Products extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('nav');
-		$this->load->view('the_product');
+		$this->load->view('product');
 		$this->load->view('footer');
 	}
 
