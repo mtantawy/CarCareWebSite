@@ -13,12 +13,12 @@ $contact = ($page == 'contact') ? 'class="active"' : '';
         <div class="container-fluid">
           <ul class="nav navbar-nav mynavlinks">
             <li <?php echo $home; ?>><a href="/">Home</a></li> 
-            <li <?php echo $about; ?>><a href="about">About Detailer's</a></li> 
-            <li <?php echo $services; ?>><a href="services">Services</a></li> 
-            <li <?php echo $products; ?>><a href="products">Products</a></li> 
-            <li <?php echo $offers; ?>><a href="offers">Offers</a></li> 
-            <li <?php echo $location; ?>><a href="location">Location Map</a></li>
-            <li <?php echo $contact; ?>><a href="contact">Contact</a></li>
+            <li <?php echo $about; ?>><a href="/about">About Detailer's</a></li> 
+            <li <?php echo $services; ?>><a href="/services">Services</a></li> 
+            <li <?php echo $products; ?>><a href="/products">Products</a></li> 
+            <li <?php echo $offers; ?>><a href="/offers">Offers</a></li> 
+            <li <?php echo $location; ?>><a href="/location">Location Map</a></li>
+            <li <?php echo $contact; ?>><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </nav>
