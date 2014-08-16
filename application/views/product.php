@@ -10,7 +10,7 @@
                       <td style="vertical-align:middle; padding:10px;">
                         <p><?php echo nl2br($article_data['body_start']); ?></p>
                       </td>
-                      <td width="370px"><center><img src="img/uploads/articles/<?php echo $article_data['image']; ?>" class="img-responsive" width="350px"></center></td>
+                      <td width="370px"><center><img src="/assets/img/uploads/articles/<?php echo $article_data['image']; ?>" class="img-responsive" width="350px"></center></td>
                     </tr>
                   </table>
                 </td>
