@@ -25,11 +25,15 @@ class Products extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public function product()
+	public function product($product_id)
 	{
-		$this->load->view('header');
-		$this->load->view('nav');
-		$this->load->view('product');
+		$this->load->model('article');
+		$article_data = $this->article->get_article($product_id);
+		//$data = array('article_data' => $article_data);
+
+		$this->load->view('header',array('title' => $article_data['title']));
+		$this->load->view('nav',array('page' => 'products'));
+		$this->load->view('product',array('article_data' => $article_data));
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
