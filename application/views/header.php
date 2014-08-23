@@ -23,7 +23,7 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
       <div class="row logos">
-        <div class="col-md-3" align="right"><img src="<?php echo base_url(); ?>assets/img/logo1 - large.png" width="180px" class="img-responsive" /></div>
+        <div class="col-md-3" align="center"><img src="<?php echo base_url(); ?>assets/img/logo1 - large.png" style="max-width:180px" class="img-responsive" /></div>
         <div class="col-md-6"></div>
-        <div class="col-md-3" align="left"><img src="<?php echo base_url(); ?>assets/img/logo_express_header.png" width="265px" class="img-responsive" /></div>
+        <div class="col-md-3" align="center"><img src="<?php echo base_url(); ?>assets/img/logo_express_header.png" style="max-width:265px" class="img-responsive" /></div>
       </div>
