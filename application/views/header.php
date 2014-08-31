@@ -8,6 +8,8 @@
 
     <!-- Bootstrap -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- my Style Sheet -->
     <link href="<?php echo base_url(); ?>assets/css/mystyle.css" rel="stylesheet">
     
@@ -23,7 +25,7 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
       <div class="row logos">
-        <div class="col-md-3" align="center"><img src="<?php echo base_url(); ?>assets/img/logo1 - large.png" style="max-width:180px" class="img-responsive" /></div>
+        <div class="col-md-3" align="center"><img src="<?php echo base_url(); ?>assets/img/Detailers_car_care_logo_header.png" style="max-width:150px" class="img-responsive" /></div>
         <div class="col-md-6"></div>
-        <div class="col-md-3" align="center"><img src="<?php echo base_url(); ?>assets/img/logo_express_header.png" style="max-width:265px" class="img-responsive" /></div>
+        <div class="col-md-3" align="center"><!-- <img src="<?php echo base_url(); ?>assets/img/logo_express_header.png" style="max-width:265px" class="img-responsive" /> --></div>
       </div>

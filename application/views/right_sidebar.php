@@ -2,7 +2,10 @@
           <p>join our newsletter to get the latest offers</p>
           <form role="form">
             <div class="form-group">
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
             <button type="submit" class="btn btn-default">Send me Offers !</button>
           </form>
