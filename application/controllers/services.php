@@ -21,9 +21,13 @@ class Services extends CI_Controller {
 	
 	public function category($category_id)
 	{
-		$this->load->view('header');
-		$this->load->view('nav');
-		$this->load->view('category');
+		$this->load->model('category');
+		$category_articles_data = $this->category->get_category_articles($category_id);
+		$category_data = $this->category->get_category($category_id);
+
+		$this->load->view('header',array('title' => $category_data['name']));
+		$this->load->view('nav',array('page' => 'services'));
+		$this->load->view('category',array('category_articles_data' => $category_articles_data, 'categorytitle' => $category_data['name']));
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}

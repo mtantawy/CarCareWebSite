@@ -21,9 +21,13 @@ class Products extends CI_Controller {
 
 	public function brand($brand_id)
 	{
-		$this->load->view('header');
-		$this->load->view('nav');
-		$this->load->view('brand');
+		$this->load->model('category');
+		$category_articles_data = $this->category->get_category_articles($brand_id);
+		$category_data = $this->category->get_category($brand_id);
+
+		$this->load->view('header',array('title' => $category_data['name']));
+		$this->load->view('nav',array('page' => 'products'));
+		$this->load->view('brand',array('category_articles_data' => $category_articles_data, 'brandtitle' => $category_data['name']));
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
