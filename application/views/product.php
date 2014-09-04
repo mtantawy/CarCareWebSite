@@ -1,6 +1,5 @@
       <div class="row">
         <div class="col-md-9 myarticlebody">
-        <!-- <div class="col-md-9 jumbotron myarticlebody"> -->
           <div class="myarticletext">
             <h2><?php echo $article_data['title']; ?></h2>
           </div>

@@ -9,13 +9,16 @@ class Services extends CI_Controller {
 
 	public function categories()
 	{
-		$this->load->view('header');
-		$this->load->view('categories');
-		$this->load->view('home');
+		$this->load->model('category');
+		$categories_data = $this->category->get_categories('2');
+
+		$this->load->view('header',array('title' => 'Service Categories'));
+		$this->load->view('nav',array('page' => 'services'));
+		$this->load->view('categories',array('categories_data' => $categories_data));
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
-
+	
 	public function category($category_id)
 	{
 		$this->load->view('header');
