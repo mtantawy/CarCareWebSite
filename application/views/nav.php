@@ -5,7 +5,7 @@ $about = ($page == 'about') ? 'class="active"' : '';
 $services = ($page == 'services') ? 'class="active"' : '';
 $products = ($page == 'products') ? 'class="active"' : '';
 $offers = ($page == 'offers') ? 'class="active"' : '';
-$location = ($page == 'location') ? 'class="active"' : '';
+$franchise = ($page == 'franchise') ? 'class="active"' : '';
 $contact = ($page == 'contact') ? 'class="active"' : '';
 
 ?>
@@ -17,7 +17,7 @@ $contact = ($page == 'contact') ? 'class="active"' : '';
             <li <?php echo $services; ?>><a href="/services">Services</a></li> 
             <li <?php echo $products; ?>><a href="/products">Products</a></li> 
             <li <?php echo $offers; ?>><a href="/offers">Offers</a></li> 
-            <li <?php echo $location; ?>><a href="/location">Location Map</a></li>
+            <li <?php echo $franchise; ?>><a href="/franchise">Franchising!</a></li>
             <li <?php echo $contact; ?>><a href="/contact">Contact</a></li>
           </ul>
         </div>

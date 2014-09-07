@@ -1,7 +1,11 @@
 		<div class="well well-sm myfooter">
-			<a href="/">Home</a> | <a href="/about">About Detailer's</a> | <a href="/services">Services</a> | <a href="/products">Products</a> | <a href="/offers">Offers</a> | <a href="/location">Location Map</a> | <a href="/contact">Contact</a>
+			<a href="/">Home</a> | <a href="/about">About Detailer's</a> | <a href="/services">Services</a> | <a href="/products">Products</a> | <a href="/offers">Offers</a> | <a href="/franchise">Franchising!</a> | <a href="/contact">Contact</a>
 		</div>
-
+		<center>
+		<span style="color: #aaa">
+		Website Developed by <a href="http://www.mtantawy.com" target="_blank">Mahmoud Tantawy</a>
+		</span>
+		</center>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

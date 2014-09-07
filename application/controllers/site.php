@@ -18,8 +18,8 @@ class Site extends CI_Controller {
 
 	public function about()
 	{
-		$this->load->view('header');
-		$this->load->view('nav');
+		$this->load->view('header',array('title' => 'About Us'));
+		$this->load->view('nav',array('page' => 'about'));
 		$this->load->view('about');
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
@@ -34,19 +34,19 @@ class Site extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public function location()
+	public function franchise()
 	{
-		$this->load->view('header');
-		$this->load->view('nav');
-		$this->load->view('location');
+		$this->load->view('header',array('title' => 'Franchising!'));
+		$this->load->view('nav',array('page' => 'franchise'));
+		$this->load->view('franchise');
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
 
 	public function contact()
 	{
-		$this->load->view('header');
-		$this->load->view('nav');
+		$this->load->view('header',array('title' => 'Contact Us'));
+		$this->load->view('nav',array('page' => 'contact'));
 		$this->load->view('contact');
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
