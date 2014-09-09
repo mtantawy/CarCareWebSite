@@ -13,7 +13,7 @@
             }
             echo '<div class="col-xs-12 col-sm-4" align="center">';
             echo '<a href="/products/brand/'.$value['id'].'" >';
-            echo '<img src="/assets/img/uploads/thumbnails/'.$value['image'].'" class="img-responsive" />';
+            echo '<img src="/assets/img/uploads/thumbnails/'.$value['image'].'" class="img-responsive" style="max-width: 180px;" />';
             echo '<p align="center">'.$value['name'].'</p>';
             echo '</a>';
             echo '</div>';

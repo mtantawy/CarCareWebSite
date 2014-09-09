@@ -7,7 +7,7 @@
             <p>
               Our business, our experience and support enabling you to become your own boss.
             </p>
-            <p>
+            <p style="text-align: justify">
               We are with you every step of the way. Through our comprehensive training program, we share all of our knowledge and expertise to assist you in managing your own business successfully. We support entrepreneurs that want to control their own business success.
             </p>
             <p>
@@ -15,7 +15,7 @@
             </p>
 
             <h3>Just the numbers</h3>
-            <p>
+            <p style="text-align: justify">
               Detailer’s car care offers an affordable investment opportunity, supporting entrepreneurs that want to control their own destiny. The average capital investment required varies depending on your specific region and specific location. Please contact us for the details in your area.
             </p>
 

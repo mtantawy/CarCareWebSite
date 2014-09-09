@@ -1,5 +1,5 @@
         <div id="right-sidebar" class="col-md-2 jumbotron mybody">
-          <p>join our newsletter to get the latest offers</p>
+          <p>Sign up to get the latest news and information via email</p>
           <form role="form">
             <div class="form-group">
               <input type="text" class="form-control" id="name" placeholder="Enter your name">
