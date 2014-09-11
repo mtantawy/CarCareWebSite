@@ -13,14 +13,14 @@
             }
             echo '<div class="col-xs-12 col-sm-4" align="center">';
             echo '<a href="/service/'.$value['id'].'" >';
-            echo '<img src="/assets/img/uploads/thumbnails/'.$value['image'].'" class="img-responsive" />';
+            if($value['image'] != '') echo '<img src="/assets/img/uploads/thumbnails/'.$value['image'].'" class="img-responsive" />';
             echo '<p align="center">'.$value['title'].'</p>';
             echo '</a>';
             echo '</div>';
 
-
           }
-          echo '</div>';
+          if(count($category_articles_data) == 0) echo '<p>No services added yet for this category.</p>';
+          else echo '</div>';
           ?>
           </div>
         </div>

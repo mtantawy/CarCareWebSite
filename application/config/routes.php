@@ -42,7 +42,7 @@
 $route['default_controller'] = "site";
 $route['404_override'] = '';
 
-$route['^(about|offers|franchise|contact)$'] = "site/$0";
+$route['^(about|franchise|contact)$'] = "site/$0";
 $route['product/(:num)(/:any)?'] = "products/product/$1";
 $route['service/(:num)(/:any)?'] = "services/service/$1";
 $route['offer/(:num)(/:any)?'] = "offers/offer/$1";

@@ -4,8 +4,6 @@ class Category extends CI_Model {
 
 	function get_categories($parentid) {
 
-		$article_data = array();
-
 		$this->db->from('categories')->where('parentid', $parentid);
 		$query = $this->db->get();
 		$result_categories = $query->result_array();

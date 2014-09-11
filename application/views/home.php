@@ -1,17 +1,38 @@
       <div id="carousel-home" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#carousel-home" data-slide-to="0"></li>
+          <?php
+          $offers_count = count($offers_data);
+          for($i=0; $i<$offers_count; $i++) {
+            if($i == 0) $class_active_text = ' class="active"';
+            else $class_active_text = '';
+            echo '<li data-target="#carousel-home" data-slide-to="'.$i.'"'.$class_active_text.'></li>';
+          }
+
+          ?>
+          <!-- <li data-target="#carousel-home" data-slide-to="0"></li>
           <li data-target="#carousel-home" data-slide-to="1"></li>
           <li data-target="#carousel-home" data-slide-to="2"></li>
           <li data-target="#carousel-home" data-slide-to="3"></li>
           <li data-target="#carousel-home" data-slide-to="4"></li>
-          <li data-target="#carousel-home" data-slide-to="5" class="active"></li>
+          <li data-target="#carousel-home" data-slide-to="5" class="active"></li> -->
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-          <div class="item">
+          <?php
+
+          foreach ($offers_data as $key => $value) {
+            //if($value['image'] == '') continue;
+            echo '<div class="item">';
+            echo '<a href="/offer/'.$value['id'].'"><img src="/assets/img/uploads/original/'.$value['image'].'" alt="'.$value['title'].'"></a>';
+            echo '<div class="carousel-caption">';
+            echo '<h3>'.$value['title'].'</h3>';
+            echo '</div></div>';
+          }
+
+          ?>
+          <!-- <div class="item">
             <a href="#"><img src="<?php echo base_url(); ?>assets/img/carousel-home/01.jpg" alt="image 01 alt text"></a>
             <div class="carousel-caption">
               <h3>header</h3>
@@ -47,7 +68,7 @@
             <div class="carousel-caption">
               image 06
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- Controls -->
