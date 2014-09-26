@@ -12,9 +12,9 @@ class Site extends CI_Controller {
 		$this->load->model('offer');
 		$offers_data = $this->offer->get_offers();
 		
-		$this->load->view('header');
+		$this->load->view('header',array('title' => 'Home'));
 		//$this->load->view('nav'); //no nav bar in home page
-		$this->load->view('home',array('offers' => $offers_data));
+		$this->load->view('home',array('offers_data' => $offers_data));
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}

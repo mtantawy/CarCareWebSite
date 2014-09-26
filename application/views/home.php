@@ -2,20 +2,22 @@
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <?php
-          $offers_count = count($offers_data);
-          for($i=0; $i<$offers_count; $i++) {
-            if($i == 0) $class_active_text = ' class="active"';
+          // $offers_count = count($offers_data);
+          // for($i=0; $i<$offers_count; $i++) {
+          //   if($i == 0) $class_active_text = ' class="active"';
+          //   else $class_active_text = '';
+          //   echo '<li data-target="#carousel-home" data-slide-to="'.$i.'"'.$class_active_text.'></li>';
+          // }
+          foreach ($offers_data as $key => $value) {
+            if($value['image'] == '') continue;
+            if($key == 0) $class_active_text = ' class="active"';
             else $class_active_text = '';
-            echo '<li data-target="#carousel-home" data-slide-to="'.$i.'"'.$class_active_text.'></li>';
+            echo '<li data-target="#carousel-home" data-slide-to="'.$key.'"'.$class_active_text.'></li>';
           }
 
+
           ?>
-          <!-- <li data-target="#carousel-home" data-slide-to="0"></li>
-          <li data-target="#carousel-home" data-slide-to="1"></li>
-          <li data-target="#carousel-home" data-slide-to="2"></li>
-          <li data-target="#carousel-home" data-slide-to="3"></li>
-          <li data-target="#carousel-home" data-slide-to="4"></li>
-          <li data-target="#carousel-home" data-slide-to="5" class="active"></li> -->
+
         </ol>
 
         <!-- Wrapper for slides -->
@@ -23,8 +25,10 @@
           <?php
 
           foreach ($offers_data as $key => $value) {
-            //if($value['image'] == '') continue;
-            echo '<div class="item">';
+            if($value['image'] == '') continue;
+            if($key == 0) $class_active_text = ' active';
+            else $class_active_text = '';
+            echo '<div class="item'.$class_active_text.'">';
             echo '<a href="/offer/'.$value['id'].'"><img src="/assets/img/uploads/original/'.$value['image'].'" alt="'.$value['title'].'"></a>';
             echo '<div class="carousel-caption">';
             echo '<h3>'.$value['title'].'</h3>';
@@ -32,43 +36,6 @@
           }
 
           ?>
-          <!-- <div class="item">
-            <a href="#"><img src="<?php echo base_url(); ?>assets/img/carousel-home/01.jpg" alt="image 01 alt text"></a>
-            <div class="carousel-caption">
-              <h3>header</h3>
-              <p>text image 01</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="<?php echo base_url(); ?>assets/img/carousel-home/02.jpg" alt="image 02 alt text">
-            <div class="carousel-caption">
-              image 02
-            </div>
-          </div>
-          <div class="item">
-            <img src="<?php echo base_url(); ?>assets/img/carousel-home/03.jpg" alt="image 03 alt text">
-            <div class="carousel-caption">
-              image 03
-            </div>
-          </div>
-          <div class="item">
-            <img src="<?php echo base_url(); ?>assets/img/carousel-home/04.jpg" alt="image 04 alt text">
-            <div class="carousel-caption">
-              image 04
-            </div>
-          </div>
-          <div class="item">
-            <img src="<?php echo base_url(); ?>assets/img/carousel-home/05.jpg" alt="image 05 alt text">
-            <div class="carousel-caption">
-              image 05
-            </div>
-          </div>
-          <div class="item active">
-            <img src="<?php echo base_url(); ?>assets/img/carousel-home/06.jpg" alt="image 06 alt text">
-            <div class="carousel-caption">
-              image 06
-            </div>
-          </div> -->
         </div>
 
         <!-- Controls -->
