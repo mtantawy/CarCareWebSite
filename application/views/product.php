@@ -5,6 +5,7 @@
           </div>
           <div class="row myarticletext">
             <div class="col-md-6">
+              <?php if($article_data['price'] != 0) echo '<p><strong>Price: </strong>'.$article_data['price'].' EGP</p>'; ?>
               <?php if(trim($article_data['body_start']) != '') echo '<h3>Description</h3>'; ?>
               <p><?php echo nl2br($article_data['body_start']); ?></p>
             </div>
