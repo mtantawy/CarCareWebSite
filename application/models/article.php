@@ -26,5 +26,33 @@ class Article extends CI_Model {
 
 	}
 
+	function get_random_articles($count, $type) {
+
+		$this->db->select('id')->from('articles')->where('type', $type);
+		$query = $this->db->get();
+		$result_article_ids = $query->result_array();
+
+		$random_ids = array();
+		if($count > count($result_article_ids)) $count = count($result_article_ids);
+		for($i=0; $i<$count; $i++) {
+			$random_id = $result_article_ids[mt_rand(0,count($result_article_ids)-1)]['id'];
+
+			//checking for duplicates
+			foreach($random_ids as $key => $value) {
+				if($random_id == $value) {
+					$i--;
+					continue 2;
+				}
+			}
+			$random_ids[] = $random_id;
+		}
+
+		$this->db->from('articles')->where_in('id', $random_ids);
+		$query = $this->db->get();
+		$result_articles = $query->result_array();
+
+		return $result_articles;
+	}
+
 
 }

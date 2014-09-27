@@ -50,43 +50,40 @@
               </ul>  
         </div>
         <div id="mybody" class="col-md-7 mybody" >
-          <div class="row">
-            <div class="col-md-6 well well-sm"><p>Detailer's Car Care + few description words</p></div>
-            <div class="col-md-6 well well-sm"><p>Detailer's Express + few description words</p></div>
-          </div>
+          <blockquote>
+            <p>Detailer’s Car Care started in 2012 and has been providing automotive connoisseurs, enthusiasts and daily users trusted car care services and products that help them restore, maintain and beautify their automobiles.</p>
+          </blockquote>
           <div>
             <h3>Latest Products</h3>
+            <div class="row">
+            <?php
+            foreach($random_products as $key => $value) {  
+              echo '<div class="col-xs-12 col-sm-3" align="center">';
+              echo '<a href="/product/'.$value['id'].'" >';
+              if($value['image'] != '') echo '<img src="/assets/img/uploads/thumbnails/'.$value['image'].'" class="img-responsive" style="height: 150px;" />';
+              echo '<p align="center">'.$value['title'].'</p>';
+              echo '</a>';
+              echo '</div>';
+            }
+            ?>
+            </div>
+
+            <hr class="myhr">
+            
+            <h3>Latest Services</h3>
+            <div class="row">
+            <?php
+            foreach($random_services as $key => $value) {  
+              echo '<div class="col-xs-12 col-sm-3" align="center">';
+              echo '<a href="/service/'.$value['id'].'" >';
+              if($value['image'] != '') echo '<img src="/assets/img/uploads/thumbnails/'.$value['image'].'" class="img-responsive" style="height: 150px;" />';
+              echo '<p align="center">'.$value['title'].'</p>';
+              echo '</a>';
+              echo '</div>';
+
+            }
+            ?>
+            </div>
 
           </div>
-          <!-- <div class="well">
-            <h3>latest products</h3>
-            <table class="table">
-              <tr>
-                <td><img src="<?php echo base_url(); ?>assets/img/thumbnails/product_sample.jpg" style="width:100px" class="img-responsive"></td>
-                <td><img src="<?php echo base_url(); ?>assets/img/thumbnails/product_sample.jpg" style="width:100px" class="img-responsive"></td>
-                <td><img src="<?php echo base_url(); ?>assets/img/thumbnails/product_sample.jpg" style="width:100px" class="img-responsive"></td>
-                <td><img src="<?php echo base_url(); ?>assets/img/thumbnails/product_sample.jpg" style="width:100px" class="img-responsive"></td>
-              </tr>
-              <tr>
-                <td>product description linked to product page</td>
-                <td>product description linked to product page</td>
-                <td>product description linked to product page</td>
-                <td>product description linked to product page</td>
-              </tr>
-            </table>
-
-            <table class="table">
-              <tr>
-                <td><img src="<?php echo base_url(); ?>assets/img/thumbnails/product_sample.jpg" style="width:180px" class="img-responsive"></td>
-                <td><img src="<?php echo base_url(); ?>assets/img/thumbnails/product_sample.jpg" style="width:180px" class="img-responsive"></td>
-                <td><img src="<?php echo base_url(); ?>assets/img/thumbnails/product_sample.jpg" style="width:180px" class="img-responsive"></td>
-              </tr>
-              <tr>
-                <td>product description linked to product page</td>
-                <td>product description linked to product page</td>
-                <td>product description linked to product page</td>
-              </tr>
-            </table>
-          </div> -->
         </div>
-        

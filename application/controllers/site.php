@@ -11,10 +11,15 @@ class Site extends CI_Controller {
 	{
 		$this->load->model('offer');
 		$offers_data = $this->offer->get_offers();
+
+		$this->load->model('article');
+		$random_products = $this->article->get_random_articles(4,1);
+		$random_services = $this->article->get_random_articles(4,2);
 		
 		$this->load->view('header',array('title' => 'Home', 'isHome' => 'true'));
 		//$this->load->view('nav'); //no nav bar in home page
-		$this->load->view('home',array('offers_data' => $offers_data));
+		$this->load->view('home',array('offers_data' => $offers_data, 
+			'random_products' => $random_products, 'random_services' => $random_services));
 		$this->load->view('right_sidebar');
 		$this->load->view('footer');
 	}
