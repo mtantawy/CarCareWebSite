@@ -11,7 +11,11 @@
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- my Style Sheet -->
+    <?php if(isset($isHome) && $isHome) { ?>
+    <link href="<?php echo base_url(); ?>assets/css/homestyle.css" rel="stylesheet">
+    <?php } else { ?>
     <link href="<?php echo base_url(); ?>assets/css/mystyle.css" rel="stylesheet">
+    <?php } ?>
     
     <!-- google analytics -->
     <script>

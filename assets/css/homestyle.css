@@ -3,7 +3,8 @@
     width: 70%;
    }
   #right-sidebar {
-    width: 25%;
+    width: 19.5%;
+    margin: 10px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -11,7 +12,8 @@
     width: 70%;
    }
   #right-sidebar {
-    width: 24%;
+    width: 18.5%;
+    margin: 10px;
   }
 }
 body {
@@ -82,7 +84,8 @@ background-size: cover;
 #right-sidebar {
   padding: 10px;
   /*width: 25%;*/
-  margin: 0px 10px 10px;
+  /* margin: 0px 10px 10px; */ /*only is homestyle.css */
+  margin: 10px;
 }
 .mybody>ul>li>a {
   color: #111;

@@ -15,7 +15,7 @@
               </div>
               <button type="submit" class="btn btn-default">Sign Up!</button>
             </form>
-            <script src="<?php echo base_url(); ?>assets/js/jquery-1.11.1.min.js"></script>
+            <!--<script src="<?php echo base_url(); ?>assets/js/jquery-1.11.1.min.js"></script> -->
             <script type="text/javascript">
             $('#subscription_form').on('submit', function(event){
               //Stop form from submitting normally
