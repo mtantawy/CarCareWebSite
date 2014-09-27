@@ -1,7 +1,15 @@
 CarCareWebSite
 ==============
 
-A web site for a car care garage and shop to present their products, services, and offers.
+A web site for a car care shop where they display their products, services, and latest offers in a neat way.
+
+**Current Features:**
+* Responsive Design
+* Grouping products by brand
+* Grouping services by category
+* Allowing visitors to subscribe to newsletter
+* Installed Google Webmaster tools & Google Analytics
+* Simple users' behavior tracking 
 
 **Future features will include:**
 * E-Commerce
