@@ -21,12 +21,12 @@ body {
   /*font-family: 'Roboto', sans-serif;*/
 }
 html { 
-/*background: url('../img/bg_.jpg') no-repeat center center fixed; 
+background: url('../img/background.jpg') no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-*/}
+}
 .logos {
   padding-top: 10px;
   padding-bottom: 10px; 
