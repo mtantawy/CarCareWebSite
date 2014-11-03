@@ -58,6 +58,9 @@ background-size: cover;
   margin: 0 auto; 
   height:450px;
 }
+.carousel-caption{
+    background: rgba(0,0,0,0.3);
+}
 .myarticlebody {
   margin: 0px 15px 10px;
   border-radius: 6px;
